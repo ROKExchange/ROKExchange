@@ -1,4 +1,4 @@
-## Hi there 👋
+#Rural Oklahoma Market Coming soon
 
 <!--
 **ROKExchange/ROKExchange** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
