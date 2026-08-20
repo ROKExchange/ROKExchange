@@ -21,9 +21,7 @@ body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
 }
-
 
 /* =========================================
    HERO / BACKGROUND
@@ -307,5 +305,134 @@ body {
 
     .signup-logo {
         width: 210px;
+    }
+}
+
+/* =========================================
+   PRIVACY NOTICE ON SIGNUP FORM
+   ========================================= */
+
+.privacy-notice {
+    margin-top: 18px;
+
+    font-size: 0.82rem;
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.privacy-notice a {
+    color: white;
+    text-decoration: underline;
+}
+
+.privacy-notice a:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   PRIVACY POLICY PAGE
+   ========================================= */
+
+.privacy-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("../images/background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 60px 20px;
+
+    color: white;
+
+    overflow-y: auto;
+}
+
+.privacy-container {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    border-radius: 12px;
+}
+
+.privacy-container h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 10px;
+}
+
+.privacy-updated {
+    margin-bottom: 35px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 0.9rem;
+}
+
+.privacy-container h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-size: 1.3rem;
+}
+
+.privacy-container p {
+    margin-bottom: 15px;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.privacy-container a {
+    color: white;
+}
+
+.privacy-container .back-link {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    text-decoration: none;
+}
+
+.privacy-container .back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   PRIVACY PAGE MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .privacy-page {
+        padding: 25px 15px;
+    }
+
+    .privacy-container {
+        padding: 30px 20px;
+    }
+
+    .privacy-container h1 {
+        font-size: 2rem;
     }
 }
