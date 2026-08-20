@@ -106,6 +106,40 @@ body {
         0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
+/* =========================================
+   UPDATE BUTTON
+   ========================================= */
+
+.updates-button {
+    display: inline-block;
+
+    margin-top: 35px;
+    padding: 15px 32px;
+
+    background: white;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border: 2px solid white;
+    border-radius: 6px;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.updates-button:hover {
+    background: transparent;
+    color: white;
+
+    transform: translateY(-2px);
+}
 
 /* =========================================
    MOBILE
