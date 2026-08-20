@@ -454,3 +454,9 @@ body {
 .homepage-privacy-link:hover {
     color: white;
 }
+
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
