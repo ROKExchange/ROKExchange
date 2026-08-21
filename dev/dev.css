@@ -1198,3 +1198,733 @@ footer {
         padding: 80px 0;
     }
 }
+
+/* =========================================
+   MARKETPLACE PAGE
+   ========================================= */
+
+
+/* =========================================
+   ACTIVE NAVIGATION
+   ========================================= */
+
+.active-nav {
+    position: relative;
+}
+
+.active-nav::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -10px;
+
+    height: 2px;
+
+    background: var(--brown);
+}
+
+
+/* =========================================
+   MARKETPLACE HERO
+   ========================================= */
+
+.marketplace-hero {
+    padding: 95px 0 70px;
+
+    background: var(--dark-green);
+    color: white;
+}
+
+.marketplace-hero-inner {
+    max-width: 1240px;
+}
+
+.marketplace-hero h1 {
+    max-width: 850px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-weight: 500;
+
+    line-height: 0.94;
+
+    letter-spacing: -0.045em;
+}
+
+.marketplace-hero h1 span {
+    display: block;
+
+    font-style: italic;
+    font-weight: 400;
+}
+
+.marketplace-hero-description {
+    max-width: 610px;
+
+    margin-top: 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.25rem;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* =========================================
+   MARKETPLACE SEARCH
+   ========================================= */
+
+.marketplace-search {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr auto;
+
+    align-items: end;
+
+    gap: 1px;
+
+    margin-top: 50px;
+
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.marketplace-search-field {
+    padding: 15px 20px;
+
+    background: var(--paper);
+    color: var(--dark);
+}
+
+.marketplace-search-field label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #777268;
+}
+
+.marketplace-search-field input {
+    width: 100%;
+
+    padding: 5px 0;
+
+    background: transparent;
+
+    border: 0;
+    outline: none;
+
+    font-size: 0.95rem;
+
+    color: var(--dark);
+}
+
+.marketplace-search-button {
+    align-self: stretch;
+
+    padding: 0 28px;
+
+    border: 0;
+
+    background: var(--gold);
+    color: var(--dark);
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   MARKETPLACE SECTION HEADING
+   ========================================= */
+
+.market-category-section {
+    padding: 90px 0;
+
+    background: var(--cream);
+}
+
+.market-section-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 0.7fr;
+
+    align-items: end;
+
+    gap: 80px;
+
+    margin-bottom: 45px;
+}
+
+.market-section-heading h2,
+.market-listings-header h2,
+.market-trust-heading h2,
+.market-sell-inner h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(2.4rem, 5vw, 4rem);
+
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+.market-section-heading > p {
+    max-width: 430px;
+
+    color: #6f7069;
+}
+
+
+/* =========================================
+   MARKETPLACE CATEGORIES
+   ========================================= */
+
+.market-category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.market-category-card {
+    min-height: 270px;
+
+    position: relative;
+
+    padding: 30px;
+
+    background: var(--paper);
+
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.market-category-card:hover {
+    background: white;
+
+    transform: translateY(-4px);
+}
+
+.market-category-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 45px;
+
+    border: 1px solid var(--brown);
+
+    border-radius: 50%;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: var(--brown);
+}
+
+.market-category-card h3 {
+    margin-bottom: 8px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.35rem;
+}
+
+.market-category-card p {
+    max-width: 290px;
+
+    color: #77766f;
+
+    font-size: 0.84rem;
+}
+
+.market-category-link {
+    position: absolute;
+
+    left: 30px;
+    bottom: 28px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   MARKET LISTINGS
+   ========================================= */
+
+.market-listings-section {
+    padding: 95px 0;
+
+    background: var(--paper);
+}
+
+.market-listings-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+
+    gap: 40px;
+
+    margin-bottom: 35px;
+}
+
+.market-listings-header > div:first-child > p:last-child {
+    margin-top: 10px;
+
+    color: #77766f;
+}
+
+.market-sort {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.market-sort label {
+    font-size: 0.65rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+
+    color: #777268;
+}
+
+.market-sort select {
+    min-width: 180px;
+
+    padding: 11px 35px 11px 12px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    color: var(--dark);
+}
+
+
+/* =========================================
+   MARKET LISTING CARDS
+   ========================================= */
+
+.market-listing-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.market-listing-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.market-listing-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(20, 30, 23, 0.08);
+}
+
+.market-listing-image {
+    position: relative;
+
+    aspect-ratio: 4 / 3;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8b897e,
+            #434b43
+        );
+}
+
+.cattle-market {
+    background:
+        linear-gradient(
+            135deg,
+            #807862,
+            #393f34
+        );
+}
+
+.horse-market {
+    background:
+        linear-gradient(
+            135deg,
+            #8a6e55,
+            #433429
+        );
+}
+
+.equipment-market {
+    background:
+        linear-gradient(
+            135deg,
+            #998856,
+            #3f4938
+        );
+}
+
+.land-market {
+    background:
+        linear-gradient(
+            135deg,
+            #ae9b72,
+            #566048
+        );
+}
+
+.trailer-market {
+    background:
+        linear-gradient(
+            135deg,
+            #8c8173,
+            #4b4a43
+        );
+}
+
+.service-market {
+    background:
+        linear-gradient(
+            135deg,
+            #6b7d70,
+            #38483d
+        );
+}
+
+.listing-category-badge {
+    position: absolute;
+
+    left: 15px;
+    top: 15px;
+
+    padding: 7px 10px;
+
+    background: var(--paper);
+
+    font-size: 0.62rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+}
+
+.listing-favorite {
+    position: absolute;
+
+    right: 15px;
+    top: 15px;
+
+    width: 37px;
+    height: 37px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: var(--paper);
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+}
+
+.market-listing-content {
+    padding: 22px;
+}
+
+.market-listing-location {
+    margin-bottom: 8px;
+
+    font-size: 0.66rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.08em;
+
+    color: #77766f;
+}
+
+.market-listing-content h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.35rem;
+
+    font-weight: 500;
+}
+
+.market-listing-description {
+    min-height: 60px;
+
+    margin-top: 10px;
+
+    font-size: 0.83rem;
+
+    color: #73736d;
+}
+
+.market-listing-bottom {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+
+    gap: 10px;
+
+    margin-top: 22px;
+    padding-top: 18px;
+
+    border-top: 1px solid var(--border);
+}
+
+.market-listing-bottom strong {
+    font-size: 1rem;
+}
+
+.market-listing-bottom strong small {
+    font-size: 0.68rem;
+
+    font-weight: 400;
+}
+
+.market-listing-bottom > span {
+    font-size: 0.67rem;
+
+    color: #88857d;
+}
+
+
+/* =========================================
+   LOAD MORE
+   ========================================= */
+
+.market-load-more {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+.market-load-button {
+    padding: 14px 30px;
+
+    background: transparent;
+
+    border: 1px solid var(--dark);
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   MARKET TRUST
+   ========================================= */
+
+.market-trust-section {
+    padding: 95px 0;
+
+    background: var(--dark-green);
+
+    color: white;
+}
+
+.market-trust-heading {
+    margin-bottom: 45px;
+}
+
+.market-trust-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.market-trust-card {
+    min-height: 240px;
+
+    padding: 30px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.market-trust-card > span {
+    font-size: 0.7rem;
+
+    color: var(--gold);
+}
+
+.market-trust-card h3 {
+    margin-top: 60px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.5rem;
+
+    font-weight: 500;
+}
+
+.market-trust-card p {
+    max-width: 300px;
+
+    margin-top: 10px;
+
+    font-size: 0.83rem;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* =========================================
+   SELL CTA
+   ========================================= */
+
+.market-sell-section {
+    padding: 85px 0;
+
+    background: var(--brown);
+
+    color: white;
+}
+
+.market-sell-inner {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.market-sell-inner p:not(.eyebrow) {
+    margin-top: 12px;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================================
+   MARKETPLACE TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .marketplace-search {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .marketplace-search-button {
+        grid-column: 1 / -1;
+
+        min-height: 55px;
+    }
+
+    .market-section-heading {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .market-category-grid,
+    .market-listing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MARKETPLACE MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .active-nav::after {
+        display: none;
+    }
+
+    .marketplace-hero {
+        padding: 70px 0 55px;
+    }
+
+    .marketplace-hero h1 {
+        font-size: 3.4rem;
+    }
+
+    .marketplace-search {
+        grid-template-columns: 1fr;
+    }
+
+    .marketplace-search-button {
+        grid-column: auto;
+
+        min-height: 55px;
+    }
+
+    .market-category-section,
+    .market-listings-section,
+    .market-trust-section {
+        padding: 70px 0;
+    }
+
+    .market-category-grid,
+    .market-listing-grid,
+    .market-trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .market-listings-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .market-sort,
+    .market-sort select {
+        width: 100%;
+    }
+
+    .market-sell-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
