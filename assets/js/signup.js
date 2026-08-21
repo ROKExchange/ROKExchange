@@ -32,14 +32,14 @@ form.addEventListener("submit", async function (event) {
 
     if (error) {
 
-        console.error(error);
+        console.error("Supabase signup error:", error);
 
         if (error.code === "23505") {
             message.textContent =
                 "You're already on the update list!";
         } else {
             message.textContent =
-                "Something went wrong. Please try again.";
+                "Error: " + error.message;
         }
 
         return;
