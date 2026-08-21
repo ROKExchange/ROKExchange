@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Development Access | ROK Exchange</title>
+
+    <link rel="stylesheet" href="dev.css">
+
+</head>
+
+
+<body class="dev-login-body">
+
+    <main class="dev-login-page">
+
+        <div class="dev-login-box">
+
+            <img
+                src="../assets/images/LOGO.png"
+                alt="ROK Exchange"
+                class="dev-login-logo"
+            >
+
+            <p class="eyebrow dark">
+                PRIVATE DEVELOPMENT
+            </p>
+
+            <h1>
+                Development Access
+            </h1>
+
+            <p class="dev-login-description">
+                This area of ROK Exchange is currently under development.
+            </p>
+
+
+            <form id="dev-login-form">
+
+                <div class="dev-form-field">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="dev-form-field">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="dev-login-button"
+                    id="login-button"
+                >
+                    Enter Development Site
+                </button>
+
+            </form>
+
+
+            <p
+                id="login-message"
+                class="dev-login-message"
+            ></p>
+
+
+            <a
+                href="../index.html"
+                class="dev-return-link"
+            >
+                ← Return to ROK Exchange
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="auth.js"></script>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
