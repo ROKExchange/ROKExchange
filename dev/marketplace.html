@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Browse the ROK Exchange marketplace for cattle, horses, equipment, land, services and more across Oklahoma."
+    >
+
+    <title>Marketplace | ROK Exchange</title>
+
+    <link
+        rel="stylesheet"
+        href="dev.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         TOP BAR
+         ======================================== -->
+
+    <div class="top-bar">
+
+        <div class="page-width top-bar-inner">
+
+            <span>
+                BY OKLAHOMANS. FOR OKLAHOMANS.
+            </span>
+
+            <span>
+                ROK MARKETPLACE
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+
+    <header class="site-header">
+
+        <div class="page-width header-inner">
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <img
+                    src="../assets/images/LOGO.png"
+                    alt="ROK Exchange"
+                >
+
+                <div class="brand-text">
+
+                    <strong>
+                        ROK EXCHANGE
+                    </strong>
+
+                    <span>
+                        RURAL OKLAHOMA'S DIGITAL FRONT PORCH
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="main-nav"
+                id="main-nav"
+            >
+
+                <a href="index.html">
+                    Discover
+                </a>
+
+                <a href="index.html#community">
+                    Community
+                </a>
+
+                <a
+                    href="marketplace.html"
+                    class="active-nav"
+                >
+                    Marketplace
+                </a>
+
+                <a href="index.html#stories">
+                    Stories
+                </a>
+
+                <a href="#" class="nav-signin">
+                    Sign In
+                </a>
+
+                <a href="#" class="nav-post">
+                    + Post a Listing
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ========================================
+             MARKETPLACE HERO
+             ======================================== -->
+
+        <section class="marketplace-hero">
+
+            <div class="page-width marketplace-hero-inner">
+
+                <p class="eyebrow">
+                    ROK MARKETPLACE
+                </p>
+
+                <h1>
+                    Buy local.
+                    <span>Sell with confidence.</span>
+                </h1>
+
+                <p class="marketplace-hero-description">
+                    Oklahoma goods, livestock, land, equipment and
+                    services from people right here at home.
+                </p>
+
+
+                <!-- Future search functionality -->
+
+                <div class="marketplace-search">
+
+                    <div class="marketplace-search-field">
+
+                        <label for="market-search">
+                            What are you looking for?
+                        </label>
+
+                        <input
+                            type="text"
+                            id="market-search"
+                            placeholder="Cattle, tractors, horses, land..."
+                        >
+
+                    </div>
+
+
+                    <div class="marketplace-search-field">
+
+                        <label for="market-location">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="market-location"
+                            placeholder="City or ZIP code"
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="marketplace-search-button"
+                    >
+                        Search Marketplace
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CATEGORY NAVIGATION
+             ======================================== -->
+
+        <section class="market-category-section">
+
+            <div class="page-width">
+
+                <div class="market-section-heading">
+
+                    <div>
+
+                        <p class="eyebrow dark">
+                            SHOP BY CATEGORY
+                        </p>
+
+                        <h2>
+                            Find what you need.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        From livestock to land, browse the things
+                        Oklahoma works with every day.
+                    </p>
+
+                </div>
+
+
+                <div class="market-category-grid">
+
+
+                    <a
+                        href="#"
+                        class="market-category-card"
+                        data-category="cattle"
+                    >
+
+                        <span class="market-category-icon">
+                            C
+                        </span>
+
+                        <h3>
+                            Cattle Exchange
+                        </h3>
+
+                        <p>
+                            Cows, calves, bulls, bred heifers and more.
+                        </p>
+
+                        <span class="market-category-link">
+                            Browse cattle →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="market-category-card"
+                        data-category="horses"
+                    >
+
+                        <span class="market-category-icon">
+                            H
+                        </span>
+
+                        <h3>
+                            Horse Exchange
+                        </h3>
+
+                        <p>
+                            Ranch horses, performance horses and prospects.
+                        </p>
+
+                        <span class="market-category-link">
+                            Browse horses →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="market-category-card"
+                        data-category="equipment"
+                    >
+
+                        <span class="market-category-icon">
+                            E
+                        </span>
+
+                        <h3>
+                            Equipment Exchange
+                        </h3>
+
+                        <p>
+                            Tractors, trailers, implements and machinery.
+                        </p>
+
+                        <span class="market-category-link">
+                            Browse equipment →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="market-category-card"
+                        data-category="land"
+                    >
+
+                        <span class="market-category-icon">
+                            L
+                        </span>
+
+                        <h3>
+                            Land Exchange
+                        </h3>
+
+                        <p>
+                            Farms, ranches, hunting property and acreage.
+                        </p>
+
+                        <span class="market-category-link">
+                            Browse land →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="market-category-card"
+                        data-category="services"
+                    >
+
+                        <span class="market-category-icon">
+                            S
+                        </span>
+
+                        <h3>
+                            Services Exchange
+                        </h3>
+
+                        <p>
+                            Local contractors, hauling, fencing and services.
+                        </p>
+
+                        <span class="market-category-link">
+                            Browse services →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="market-category-card"
+                        data-category="other"
+                    >
+
+                        <span class="market-category-icon">
+                            +
+                        </span>
+
+                        <h3>
+                            Everything Else
+                        </h3>
+
+                        <p>
+                            Tools, supplies, trailers and Oklahoma finds.
+                        </p>
+
+                        <span class="market-category-link">
+                            Browse all →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             LISTINGS TOOLBAR
+             ======================================== -->
+
+        <section class="market-listings-section">
+
+            <div class="page-width">
+
+                <div class="market-listings-header">
+
+                    <div>
+
+                        <p class="eyebrow dark">
+                            THE EXCHANGE
+                        </p>
+
+                        <h2>
+                            Fresh listings
+                        </h2>
+
+                        <p>
+                            Recently added across Oklahoma.
+                        </p>
+
+                    </div>
+
+
+                    <div class="market-sort">
+
+                        <label for="sort">
+                            Sort by
+                        </label>
+
+                        <select id="sort">
+
+                            <option>
+                                Newest
+                            </option>
+
+                            <option>
+                                Price: Low to High
+                            </option>
+
+                            <option>
+                                Price: High to Low
+                            </option>
+
+                            <option>
+                                Nearest
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     PLACEHOLDER LISTINGS
+                     ======================================== -->
+
+                <div
+                    class="market-listing-grid"
+                    id="market-listing-grid"
+                >
+
+
+                    <article
+                        class="market-listing-card"
+                        data-category="cattle"
+                    >
+
+                        <div class="market-listing-image cattle-market">
+
+                            <span class="listing-category-badge">
+                                CATTLE
+                            </span>
+
+                            <button
+                                type="button"
+                                class="listing-favorite"
+                                aria-label="Save listing"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="market-listing-content">
+
+                            <div class="market-listing-location">
+                                Watonga, Oklahoma
+                            </div>
+
+                            <h3>
+                                42 Angus bred heifers
+                            </h3>
+
+                            <p class="market-listing-description">
+                                Uniform group of bred Angus heifers.
+                                Calving expected this fall.
+                            </p>
+
+                            <div class="market-listing-bottom">
+
+                                <strong>
+                                    $2,850
+                                    <small>/ head</small>
+                                </strong>
+
+                                <span>
+                                    2 hours ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="market-listing-card"
+                        data-category="horses"
+                    >
+
+                        <div class="market-listing-image horse-market">
+
+                            <span class="listing-category-badge">
+                                HORSES
+                            </span>
+
+                            <button
+                                type="button"
+                                class="listing-favorite"
+                                aria-label="Save listing"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="market-listing-content">
+
+                            <div class="market-listing-location">
+                                Guthrie, Oklahoma
+                            </div>
+
+                            <h3>
+                                Finished ranch gelding
+                            </h3>
+
+                            <p class="market-listing-description">
+                                Experienced ranch horse with a quiet
+                                disposition and plenty of miles.
+                            </p>
+
+                            <div class="market-listing-bottom">
+
+                                <strong>
+                                    $18,500
+                                </strong>
+
+                                <span>
+                                    Today
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="market-listing-card"
+                        data-category="equipment"
+                    >
+
+                        <div class="market-listing-image equipment-market">
+
+                            <span class="listing-category-badge">
+                                EQUIPMENT
+                            </span>
+
+                            <button
+                                type="button"
+                                class="listing-favorite"
+                                aria-label="Save listing"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="market-listing-content">
+
+                            <div class="market-listing-location">
+                                Elk City, Oklahoma
+                            </div>
+
+                            <h3>
+                                2021 John Deere 5075E
+                            </h3>
+
+                            <p class="market-listing-description">
+                                Low-hour utility tractor with loader.
+                                Clean and ready to work.
+                            </p>
+
+                            <div class="market-listing-bottom">
+
+                                <strong>
+                                    $54,900
+                                </strong>
+
+                                <span>
+                                    Yesterday
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="market-listing-card"
+                        data-category="land"
+                    >
+
+                        <div class="market-listing-image land-market">
+
+                            <span class="listing-category-badge">
+                                LAND
+                            </span>
+
+                            <button
+                                type="button"
+                                class="listing-favorite"
+                                aria-label="Save listing"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="market-listing-content">
+
+                            <div class="market-listing-location">
+                                Kingfisher County, Oklahoma
+                            </div>
+
+                            <h3>
+                                160 acres of native grass
+                            </h3>
+
+                            <p class="market-listing-description">
+                                Productive native pasture with good
+                                access and established fencing.
+                            </p>
+
+                            <div class="market-listing-bottom">
+
+                                <strong>
+                                    $640,000
+                                </strong>
+
+                                <span>
+                                    2 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="market-listing-card"
+                        data-category="equipment"
+                    >
+
+                        <div class="market-listing-image trailer-market">
+
+                            <span class="listing-category-badge">
+                                EQUIPMENT
+                            </span>
+
+                            <button
+                                type="button"
+                                class="listing-favorite"
+                                aria-label="Save listing"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="market-listing-content">
+
+                            <div class="market-listing-location">
+                                Woodward, Oklahoma
+                            </div>
+
+                            <h3>
+                                24' livestock trailer
+                            </h3>
+
+                            <p class="market-listing-description">
+                                Gooseneck stock trailer with center gate
+                                and recently replaced tires.
+                            </p>
+
+                            <div class="market-listing-bottom">
+
+                                <strong>
+                                    $12,750
+                                </strong>
+
+                                <span>
+                                    3 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="market-listing-card"
+                        data-category="services"
+                    >
+
+                        <div class="market-listing-image service-market">
+
+                            <span class="listing-category-badge">
+                                SERVICES
+                            </span>
+
+                            <button
+                                type="button"
+                                class="listing-favorite"
+                                aria-label="Save listing"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+
+                        <div class="market-listing-content">
+
+                            <div class="market-listing-location">
+                                Western Oklahoma
+                            </div>
+
+                            <h3>
+                                Ranch fencing & repair
+                            </h3>
+
+                            <p class="market-listing-description">
+                                New fence construction, repair and
+                                pasture cross fencing.
+                            </p>
+
+                            <div class="market-listing-bottom">
+
+                                <strong>
+                                    Contact for quote
+                                </strong>
+
+                                <span>
+                                    4 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <div class="market-load-more">
+
+                    <button
+                        type="button"
+                        class="market-load-button"
+                    >
+                        Load more listings
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             TRUST SECTION
+             ======================================== -->
+
+        <section class="market-trust-section">
+
+            <div class="page-width">
+
+                <div class="market-trust-heading">
+
+                    <p class="eyebrow">
+                        A BETTER WAY TO TRADE
+                    </p>
+
+                    <h2>
+                        Built for Oklahoma.
+                    </h2>
+
+                </div>
+
+
+                <div class="market-trust-grid">
+
+
+                    <div class="market-trust-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Real people
+                        </h3>
+
+                        <p>
+                            Marketplace accounts will be connected
+                            to real ROK Exchange members.
+                        </p>
+
+                    </div>
+
+
+                    <div class="market-trust-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Local listings
+                        </h3>
+
+                        <p>
+                            Find goods, livestock and services from
+                            communities across Oklahoma.
+                        </p>
+
+                    </div>
+
+
+                    <div class="market-trust-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Oklahoma support
+                        </h3>
+
+                        <p>
+                            A marketplace built around the people
+                            who actually use it.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             SELL CTA
+             ======================================== -->
+
+        <section class="market-sell-section">
+
+            <div class="page-width market-sell-inner">
+
+                <div>
+
+                    <p class="eyebrow">
+                        HAVE SOMETHING TO SELL?
+                    </p>
+
+                    <h2>
+                        Put it on the Exchange.
+                    </h2>
+
+                    <p>
+                        Reach buyers across Oklahoma through
+                        the ROK Marketplace.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="#"
+                    class="button button-light"
+                >
+                    + Post a Listing
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer>
+
+        <div class="page-width footer-inner">
+
+            <div>
+
+                <strong class="footer-logo">
+                    ROK EXCHANGE
+                </strong>
+
+                <span>
+                    BY OKLAHOMANS. FOR OKLAHOMANS.
+                </span>
+
+            </div>
+
+
+            <nav>
+
+                <a href="index.html">
+                    Life
+                </a>
+
+                <a href="index.html#community">
+                    Community
+                </a>
+
+                <a href="index.html#media">
+                    Music
+                </a>
+
+                <a href="marketplace.html">
+                    Marketplace
+                </a>
+
+            </nav>
+
+
+            <p>
+                © 2026 ROK Exchange
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="dev.js"></script>
+
+</body>
+
+</html>
