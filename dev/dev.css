@@ -1928,3 +1928,159 @@ footer {
     }
 
 }
+
+/* =========================================
+   DEVELOPMENT LOGIN
+   ========================================= */
+
+.dev-login-body {
+    min-height: 100vh;
+
+    background: var(--cream);
+}
+
+
+.dev-login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.dev-login-box {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 50px;
+
+    background: var(--paper);
+
+    border: 1px solid var(--border);
+
+    text-align: center;
+}
+
+
+.dev-login-logo {
+    width: 120px;
+    height: auto;
+
+    margin-bottom: 30px;
+}
+
+
+.dev-login-box h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    margin-bottom: 12px;
+}
+
+
+.dev-login-description {
+    margin-bottom: 35px;
+
+    color: #73736d;
+
+    font-size: 0.9rem;
+}
+
+
+.dev-form-field {
+    margin-bottom: 18px;
+
+    text-align: left;
+}
+
+
+.dev-form-field label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+.dev-form-field input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid var(--border);
+
+    background: white;
+
+    font-size: 1rem;
+
+    outline: none;
+}
+
+
+.dev-form-field input:focus {
+    border-color: var(--dark-green);
+}
+
+
+.dev-login-button {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 5px;
+
+    border: 0;
+
+    background: var(--dark-green);
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.dev-login-button:hover {
+    opacity: 0.9;
+}
+
+
+.dev-login-button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+.dev-login-message {
+    min-height: 24px;
+
+    margin-top: 18px;
+
+    font-size: 0.85rem;
+
+    color: var(--brown);
+}
+
+
+.dev-return-link {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    font-size: 0.8rem;
+
+    color: #73736d;
+}
