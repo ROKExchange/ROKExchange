@@ -2084,3 +2084,21 @@ footer {
 
     color: #73736d;
 }
+
+/* =========================================
+   DEVELOPMENT LOGOUT BUTTON
+   ========================================= */
+
+.dev-logout {
+    padding: 0;
+
+    background: transparent;
+
+    border: none;
+
+    font: inherit;
+
+    color: inherit;
+
+    cursor: pointer;
+}
