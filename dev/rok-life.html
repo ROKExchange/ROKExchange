@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="ROK Life - Oklahoma people, places, food, stories and community."
+    >
+
+    <title>ROK Life | ROK Exchange</title>
+
+    <link
+        rel="stylesheet"
+        href="dev.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         TOP BAR
+         ======================================== -->
+
+    <div class="top-bar">
+
+        <div class="page-width top-bar-inner">
+
+            <span>
+                BY OKLAHOMANS. FOR OKLAHOMANS.
+            </span>
+
+            <span>
+                ROK LIFE
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+
+    <header class="site-header">
+
+        <div class="page-width header-inner">
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <img
+                    src="../assets/images/LOGO.png"
+                    alt="ROK Exchange"
+                >
+
+                <div class="brand-text">
+
+                    <strong>
+                        ROK EXCHANGE
+                    </strong>
+
+                    <span>
+                        RURAL OKLAHOMA'S DIGITAL FRONT PORCH
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="main-nav"
+                id="main-nav"
+            >
+
+                <a href="index.html">
+                    Discover
+                </a>
+
+                <a href="rok-life.html" class="active-nav">
+                    ROK Life
+                </a>
+
+                <a href="marketplace.html">
+                    Marketplace
+                </a>
+
+                <a href="horse-value-index.html">
+                    Horse Value Index
+                </a>
+
+                <a href="index.html#stories">
+                    Stories
+                </a>
+
+                <button
+                    type="button"
+                    class="dev-logout"
+                    onclick="logoutDev()"
+                >
+                    Sign Out
+                </button>
+
+                <a
+                    href="#"
+                    class="nav-post"
+                >
+                    + Post a Listing
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ========================================
+             HERO
+             ======================================== -->
+
+        <section class="rok-life-hero">
+
+            <div class="page-width rok-life-hero-inner">
+
+                <p class="eyebrow">
+                    ROK LIFE
+                </p>
+
+                <h1>
+                    The people, places and stories
+                    <span>that make Oklahoma home.</span>
+                </h1>
+
+                <p class="rok-life-intro">
+                    Discover the food, communities, traditions,
+                    businesses, events and everyday stories that
+                    make Oklahoma worth knowing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CATEGORY GRID
+             ======================================== -->
+
+        <section class="rok-life-section">
+
+            <div class="page-width">
+
+                <div class="rok-life-heading">
+
+                    <p class="eyebrow dark">
+                        EXPLORE ROK LIFE
+                    </p>
+
+                    <h2>
+                        Find your corner of Oklahoma.
+                    </h2>
+
+                    <p>
+                        Browse stories and features from communities
+                        across the state.
+                    </p>
+
+                </div>
+
+
+                <div class="rok-life-category-grid">
+
+
+                    <a href="#" class="rok-life-category-card">
+
+                        <span class="rok-life-category-number">
+                            01
+                        </span>
+
+                        <h3>
+                            People
+                        </h3>
+
+                        <p>
+                            Ranchers, makers, business owners,
+                            neighbors and Oklahoma personalities.
+                        </p>
+
+                        <span class="rok-life-card-link">
+                            Meet Oklahoma →
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="rok-life-category-card">
+
+                        <span class="rok-life-category-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Food
+                        </h3>
+
+                        <p>
+                            Restaurants, recipes, local products
+                            and the food traditions of Oklahoma.
+                        </p>
+
+                        <span class="rok-life-card-link">
+                            Explore food →
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="rok-life-category-card">
+
+                        <span class="rok-life-category-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Community
+                        </h3>
+
+                        <p>
+                            Local events, schools, organizations,
+                            fundraisers and community happenings.
+                        </p>
+
+                        <span class="rok-life-card-link">
+                            See communities →
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="rok-life-category-card">
+
+                        <span class="rok-life-category-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Stories
+                        </h3>
+
+                        <p>
+                            Oklahoma history, family stories,
+                            local features and voices worth sharing.
+                        </p>
+
+                        <span class="rok-life-card-link">
+                            Read stories →
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="rok-life-category-card">
+
+                        <span class="rok-life-category-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Places
+                        </h3>
+
+                        <p>
+                            Main Streets, hidden gems, towns,
+                            ranches and destinations around Oklahoma.
+                        </p>
+
+                        <span class="rok-life-card-link">
+                            Discover places →
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="rok-life-category-card">
+
+                        <span class="rok-life-category-number">
+                            06
+                        </span>
+
+                        <h3>
+                            Events
+                        </h3>
+
+                        <p>
+                            Fairs, rodeos, markets, festivals,
+                            concerts and community gatherings.
+                        </p>
+
+                        <span class="rok-life-card-link">
+                            Browse events →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             FEATURED STORY
+             ======================================== -->
+
+        <section class="rok-life-feature-section">
+
+            <div class="page-width rok-life-feature-grid">
+
+                <div class="rok-life-feature-image">
+
+                    <span>
+                        FEATURED STORY
+                    </span>
+
+                </div>
+
+
+                <div class="rok-life-feature-copy">
+
+                    <p class="eyebrow dark">
+                        FEATURED
+                    </p>
+
+                    <h2>
+                        Oklahoma stories worth
+                        <span>passing down.</span>
+                    </h2>
+
+                    <p>
+                        ROK Life is built to highlight the people
+                        and places that don't always make the front
+                        page but help define Oklahoma every day.
+                    </p>
+
+                    <a href="#" class="text-link">
+                        Read the latest story →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             LATEST FROM ROK LIFE
+             ======================================== -->
+
+        <section class="rok-life-latest-section">
+
+            <div class="page-width">
+
+                <div class="rok-life-latest-heading">
+
+                    <div>
+
+                        <p class="eyebrow dark">
+                            LATEST FROM ROK LIFE
+                        </p>
+
+                        <h2>
+                            Around Oklahoma
+                        </h2>
+
+                    </div>
+
+                    <a href="#">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="rok-life-story-grid">
+
+
+                    <article class="rok-life-story-card">
+
+                        <div class="rok-life-story-image">
+                            PEOPLE
+                        </div>
+
+                        <div class="rok-life-story-content">
+
+                            <small>
+                                PEOPLE · WESTERN OKLAHOMA
+                            </small>
+
+                            <h3>
+                                Meet the family keeping a
+                                centennial ranch alive
+                            </h3>
+
+                            <p>
+                                A placeholder story about generations,
+                                land and the future of an Oklahoma ranch.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="rok-life-story-card">
+
+                        <div class="rok-life-story-image food">
+                            FOOD
+                        </div>
+
+                        <div class="rok-life-story-content">
+
+                            <small>
+                                FOOD · OKLAHOMA CITY
+                            </small>
+
+                            <h3>
+                                The Oklahoma restaurant
+                                bringing people back downtown
+                            </h3>
+
+                            <p>
+                                A placeholder feature highlighting
+                                local food and small business.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="rok-life-story-card">
+
+                        <div class="rok-life-story-image community">
+                            COMMUNITY
+                        </div>
+
+                        <div class="rok-life-story-content">
+
+                            <small>
+                                COMMUNITY · GUTHRIE
+                            </small>
+
+                            <h3>
+                                How one Main Street event
+                                brought a town together
+                            </h3>
+
+                            <p>
+                                A placeholder community story ready
+                                to be replaced with real content.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CTA
+             ======================================== -->
+
+        <section class="rok-life-cta">
+
+            <div class="page-width rok-life-cta-inner">
+
+                <p class="eyebrow">
+                    HAVE A STORY?
+                </p>
+
+                <h2>
+                    Help us tell Oklahoma's story.
+                </h2>
+
+                <p>
+                    Know a person, business, event or place that
+                    deserves to be featured on ROK Life?
+                </p>
+
+                <a href="#" class="button button-light">
+                    Submit a Story Idea →
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer>
+
+        <div class="page-width footer-inner">
+
+            <div>
+
+                <strong class="footer-logo">
+                    ROK EXCHANGE
+                </strong>
+
+                <span>
+                    BY OKLAHOMANS. FOR OKLAHOMANS.
+                </span>
+
+            </div>
+
+
+            <nav>
+
+                <a href="rok-life.html">
+                    ROK Life
+                </a>
+
+                <a href="marketplace.html">
+                    Marketplace
+                </a>
+
+                <a href="horse-value-index.html">
+                    Horse Value Index
+                </a>
+
+                <a href="index.html#community">
+                    Community
+                </a>
+
+            </nav>
+
+
+            <p>
+                © 2026 ROK Exchange
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================
+         SCRIPTS
+         ======================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="auth.js"></script>
+
+    <script>
+        requireDevLogin();
+    </script>
+
+    <script src="dev.js"></script>
+
+
+</body>
+
+</html>
