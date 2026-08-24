@@ -2102,3 +2102,553 @@ footer {
 
     cursor: pointer;
 }
+
+/* =========================================
+   HORSE VALUE INDEX
+   ========================================= */
+
+.hvi-hero {
+    padding: 120px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(22, 35, 27, 0.96),
+            rgba(22, 35, 27, 0.83)
+        ),
+        url("../assets/images/background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+
+.hvi-hero-inner {
+    max-width: 900px;
+}
+
+
+.hvi-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+
+    font-weight: 500;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.04em;
+}
+
+
+.hvi-hero h1 span {
+    display: block;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.hvi-intro {
+    max-width: 650px;
+
+    margin-top: 30px;
+
+    font-size: 1.1rem;
+
+    line-height: 1.65;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.hvi-start-button {
+    margin-top: 35px;
+
+    background: var(--gold);
+
+    color: var(--dark);
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+
+/* =========================================
+   HOW IT WORKS
+   ========================================= */
+
+.hvi-how-section {
+    padding: 100px 0;
+
+    background: var(--cream);
+}
+
+
+.hvi-section-heading {
+    max-width: 760px;
+
+    margin-bottom: 55px;
+}
+
+
+.hvi-section-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 1;
+
+    font-weight: 500;
+}
+
+
+.hvi-section-heading h2 span {
+    display: block;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.hvi-step-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--border);
+
+    border-left: 1px solid var(--border);
+}
+
+
+.hvi-step {
+    min-height: 280px;
+
+    padding: 35px;
+
+    background: var(--paper);
+
+    border-right: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.hvi-step > span {
+    color: var(--brown);
+
+    font-size: 0.7rem;
+}
+
+
+.hvi-step h3 {
+    margin-top: 75px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.5rem;
+
+    font-weight: 500;
+}
+
+
+.hvi-step p {
+    margin-top: 12px;
+
+    color: #70716b;
+
+    font-size: 0.86rem;
+}
+
+
+
+/* =========================================
+   NOTICE
+   ========================================= */
+
+.hvi-notice-section {
+    padding: 85px 0;
+
+    background: var(--brown);
+
+    color: white;
+}
+
+
+.hvi-notice {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+}
+
+
+.hvi-notice h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2.8rem;
+
+    font-weight: 500;
+}
+
+
+.hvi-notice > p {
+    color: rgba(255, 255, 255, 0.75);
+
+    line-height: 1.7;
+}
+
+
+
+/* =========================================
+   HVI MODAL
+   ========================================= */
+
+.modal-open {
+    overflow: hidden;
+}
+
+
+.hvi-modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 5000;
+}
+
+
+.hvi-modal.open {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.hvi-modal-backdrop {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(10, 17, 12, 0.78);
+}
+
+
+.hvi-modal-panel {
+    position: relative;
+
+    z-index: 1;
+
+    width: min(94%, 850px);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 50px;
+
+    background: var(--paper);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0, 0, 0, 0.3);
+}
+
+
+.hvi-close {
+    position: absolute;
+
+    top: 18px;
+
+    right: 22px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 2rem;
+
+    color: var(--dark);
+
+    cursor: pointer;
+}
+
+
+.hvi-form-view h2,
+.hvi-result-view h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2.5rem;
+
+    font-weight: 500;
+}
+
+
+.hvi-form-intro {
+    margin-top: 10px;
+
+    margin-bottom: 35px;
+
+    color: #75756e;
+}
+
+
+
+/* =========================================
+   HVI FORM
+   ========================================= */
+
+#hvi-form {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.hvi-field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.hvi-field-full {
+    grid-column: 1 / -1;
+}
+
+
+.hvi-field label {
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+.hvi-field input,
+.hvi-field select {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid var(--border);
+
+    background: white;
+
+    font: inherit;
+
+    color: var(--dark);
+
+    outline: none;
+}
+
+
+.hvi-field input:focus,
+.hvi-field select:focus {
+    border-color: var(--dark-green);
+}
+
+
+.hvi-calculate-button {
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    background: var(--dark-green);
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+
+/* =========================================
+   HVI RESULT
+   ========================================= */
+
+.hvi-result-view {
+    text-align: center;
+}
+
+
+.hvi-value-range {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 45px;
+}
+
+
+.hvi-value-range span {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(2.4rem, 6vw, 4rem);
+
+    color: var(--dark-green);
+}
+
+
+.hvi-value-range small {
+    color: #8a887f;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.1em;
+}
+
+
+.hvi-midpoint {
+    margin-top: 15px;
+
+    color: #74736d;
+}
+
+
+.hvi-midpoint strong {
+    color: var(--dark);
+}
+
+
+.hvi-confidence {
+    max-width: 400px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 40px auto 0;
+
+    padding: 15px 0;
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+    font-size: 0.75rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.08em;
+}
+
+
+.hvi-confidence strong {
+    color: var(--brown);
+}
+
+
+.hvi-result-note {
+    max-width: 550px;
+
+    margin: 30px auto 0;
+
+    color: #77766f;
+
+    line-height: 1.6;
+
+    font-size: 0.84rem;
+}
+
+
+.hvi-again-button {
+    margin-top: 30px;
+
+    padding: 14px 25px;
+
+    background: transparent;
+
+    border: 1px solid var(--dark);
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+
+
+/* =========================================
+   HVI MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .hvi-hero {
+        padding: 85px 0;
+    }
+
+
+    .hvi-step-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hvi-notice {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .hvi-modal-panel {
+        width: 100%;
+
+        height: 100%;
+
+        max-height: 100vh;
+
+        padding: 45px 22px;
+
+        overflow-y: auto;
+    }
+
+
+    #hvi-form {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hvi-field-full {
+        grid-column: auto;
+    }
+
+
+    .hvi-value-range {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+}
