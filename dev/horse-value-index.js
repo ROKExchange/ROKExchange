@@ -85,10 +85,19 @@ hviBackdrop.addEventListener(
 
 hviForm.addEventListener(
     "submit",
-    function (event) {
+    async function (event) {
 
         event.preventDefault();
 
+                const email =
+                    document.getElementById(
+                        "horse-email"
+                    ).value.trim();
+
+                const emailConsent =
+                    document.getElementById(
+                        "horse-email-consent"
+                    ).checked;
 
         const age =
             Number(
@@ -139,7 +148,44 @@ hviForm.addEventListener(
                 "horse-soundness"
             ).value;
 
+/* =========================================
+   EMAIL VALIDATION
+   ========================================= */
 
+if (!email || !emailConsent) {
+
+    alert(
+        "Please enter your email and agree to receive your Horse Value Index evaluation."
+    );
+
+    return;
+}
+
+        /* =========================================
+   SAVE EMAIL TO SUPABASE
+   ========================================= */
+
+const { error: emailSaveError } =
+    await supabaseClient
+        .from("horse_value_requests")
+        .insert({
+            email: email
+        });
+
+
+if (emailSaveError) {
+
+    console.error(
+        "Horse Value email save error:",
+        emailSaveError
+    );
+
+    alert(
+        "We couldn't save your email. Please try again."
+    );
+
+    return;
+}
 
         /*
          * IMPORTANT:
