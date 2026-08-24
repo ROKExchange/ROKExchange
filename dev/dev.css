@@ -2710,3 +2710,493 @@ footer {
 
     color: #55564f;
 }
+
+/* =========================================
+   ROK LIFE PAGE
+   ========================================= */
+
+.rok-life-hero {
+    padding: 120px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(23, 35, 28, 0.92),
+            rgba(23, 35, 28, 0.58)
+        ),
+        url("../assets/images/background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+
+.rok-life-hero-inner {
+    max-width: 900px;
+}
+
+
+.rok-life-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(3.5rem, 7vw, 6.3rem);
+
+    font-weight: 500;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.04em;
+}
+
+
+.rok-life-hero h1 span {
+    display: block;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.rok-life-intro {
+    max-width: 650px;
+
+    margin-top: 28px;
+
+    font-size: 1.1rem;
+
+    line-height: 1.65;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* =========================================
+   ROK LIFE CATEGORIES
+   ========================================= */
+
+.rok-life-section {
+    padding: 100px 0;
+
+    background: var(--cream);
+}
+
+
+.rok-life-heading {
+    max-width: 720px;
+
+    margin-bottom: 50px;
+}
+
+
+.rok-life-heading h2,
+.rok-life-feature-copy h2,
+.rok-life-latest-heading h2,
+.rok-life-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(2.4rem, 5vw, 4rem);
+
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+
+.rok-life-heading > p:last-child {
+    margin-top: 15px;
+
+    color: #72736d;
+}
+
+
+.rok-life-category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--border);
+
+    border-left: 1px solid var(--border);
+}
+
+
+.rok-life-category-card {
+    min-height: 280px;
+
+    position: relative;
+
+    padding: 32px;
+
+    background: var(--paper);
+
+    border-right: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.rok-life-category-card:hover {
+    background: white;
+
+    transform: translateY(-4px);
+}
+
+
+.rok-life-category-number {
+    color: var(--brown);
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.1em;
+}
+
+
+.rok-life-category-card h3 {
+    margin-top: 50px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.6rem;
+
+    font-weight: 500;
+}
+
+
+.rok-life-category-card p {
+    max-width: 300px;
+
+    margin-top: 10px;
+
+    color: #72736d;
+
+    font-size: 0.85rem;
+}
+
+
+.rok-life-card-link {
+    position: absolute;
+
+    left: 32px;
+
+    bottom: 28px;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   FEATURED
+   ========================================= */
+
+.rok-life-feature-section {
+    background: var(--paper);
+}
+
+
+.rok-life-feature-grid {
+    min-height: 620px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.rok-life-feature-image {
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            rgba(20, 30, 23, 0.15),
+            rgba(20, 30, 23, 0.15)
+        ),
+        url("../assets/images/background.png");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.rok-life-feature-image span {
+    padding: 8px 12px;
+
+    background: var(--paper);
+
+    font-size: 0.66rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+
+.rok-life-feature-copy {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 70px;
+}
+
+
+.rok-life-feature-copy h2 span {
+    display: block;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.rok-life-feature-copy > p:not(.eyebrow) {
+    max-width: 480px;
+
+    margin-top: 25px;
+
+    color: #6d6f68;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   LATEST
+   ========================================= */
+
+.rok-life-latest-section {
+    padding: 100px 0;
+
+    background: var(--cream);
+}
+
+
+.rok-life-latest-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+}
+
+
+.rok-life-latest-heading > a {
+    font-size: 0.8rem;
+
+    font-weight: 700;
+}
+
+
+.rok-life-story-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.rok-life-story-card {
+    background: var(--paper);
+
+    border: 1px solid var(--border);
+}
+
+
+.rok-life-story-image {
+    aspect-ratio: 4 / 3;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8d866f,
+            #4a5548
+        );
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.15em;
+}
+
+
+.rok-life-story-image.food {
+    background:
+        linear-gradient(
+            135deg,
+            #9d7c5a,
+            #584031
+        );
+}
+
+
+.rok-life-story-image.community {
+    background:
+        linear-gradient(
+            135deg,
+            #748476,
+            #394a3e
+        );
+}
+
+
+.rok-life-story-content {
+    padding: 22px;
+}
+
+
+.rok-life-story-content small {
+    font-size: 0.64rem;
+
+    letter-spacing: 0.08em;
+
+    color: #7c7a72;
+}
+
+
+.rok-life-story-content h3 {
+    margin-top: 10px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.35rem;
+
+    font-weight: 500;
+}
+
+
+.rok-life-story-content p {
+    margin-top: 10px;
+
+    color: #71726b;
+
+    font-size: 0.83rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ROK LIFE CTA
+   ========================================= */
+
+.rok-life-cta {
+    padding: 95px 0;
+
+    background: var(--brown);
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.rok-life-cta-inner {
+    max-width: 760px;
+}
+
+
+.rok-life-cta p:not(.eyebrow) {
+    max-width: 600px;
+
+    margin: 20px auto 0;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.rok-life-cta .button {
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   ROK LIFE TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .rok-life-category-grid,
+    .rok-life-story-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .rok-life-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rok-life-feature-image {
+        min-height: 450px;
+    }
+
+}
+
+
+/* =========================================
+   ROK LIFE MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .rok-life-hero {
+        padding: 80px 0;
+    }
+
+
+    .rok-life-hero h1 {
+        font-size: 3.4rem;
+    }
+
+
+    .rok-life-section,
+    .rok-life-latest-section {
+        padding: 70px 0;
+    }
+
+
+    .rok-life-category-grid,
+    .rok-life-story-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rok-life-feature-copy {
+        padding: 55px 0;
+    }
+
+
+    .rok-life-latest-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
