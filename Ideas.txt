@@ -2,7 +2,7 @@ Community Page - Rodeo? Tickets, Music/Artists, Food (Recipes/Restaurants), News
 Market updates - price of beef, wheat futures, corn futures, oil prices, --------- carnegie co-op example (barchart)
 
 
-Horse Value Index - Monetary range given for a horse based on certifications and evaluations
+Horse Value Index - Monetary range given for a horse based on evaluations made from user input details
 HorseMatch - 1-100 Number given based on a BUYERS wants and our available listings.
 
 
