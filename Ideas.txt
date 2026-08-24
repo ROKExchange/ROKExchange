@@ -6,3 +6,4 @@ Horse Value Index - Monetary range given for a horse based on evaluations made f
 HorseMatch - 1-100 Number given based on a BUYERS wants and our available listings.
 
 
+HVI - 
