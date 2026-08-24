@@ -2652,3 +2652,61 @@ footer {
     }
 
 }
+
+/* =========================================
+   HVI EMAIL + CONSENT
+   ========================================= */
+
+.hvi-email-help {
+    margin-top: 2px;
+
+    font-size: 0.75rem;
+    line-height: 1.5;
+
+    color: #77766f;
+}
+
+
+.hvi-consent {
+    margin-top: 4px;
+
+    padding: 16px;
+
+    background: rgba(109, 85, 59, 0.07);
+
+    border: 1px solid var(--border);
+}
+
+
+.hvi-consent label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    cursor: pointer;
+}
+
+
+.hvi-consent input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    margin-top: 2px;
+
+    accent-color: var(--dark-green);
+
+    cursor: pointer;
+}
+
+
+.hvi-consent span {
+    font-size: 0.82rem;
+
+    line-height: 1.5;
+
+    color: #55564f;
+}
