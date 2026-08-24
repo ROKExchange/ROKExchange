@@ -5,3 +5,4 @@ Market updates - price of beef, wheat futures, corn futures, oil prices, -------
 Horse Value Index - Monetary range given for a horse based on certifications and evaluations
 HorseMatch - 1-100 Number given based on a BUYERS wants and our available listings.
 
+
