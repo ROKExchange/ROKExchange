@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="ROK Exchange Horse Value Index"
+    >
+
+    <title>Horse Value Index | ROK Exchange</title>
+
+    <link
+        rel="stylesheet"
+        href="dev.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         TOP BAR
+         ======================================== -->
+
+    <div class="top-bar">
+
+        <div class="page-width top-bar-inner">
+
+            <span>
+                BY OKLAHOMANS. FOR OKLAHOMANS.
+            </span>
+
+            <span>
+                HORSE VALUE INDEX
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+
+    <header class="site-header">
+
+        <div class="page-width header-inner">
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <img
+                    src="../assets/images/LOGO.png"
+                    alt="ROK Exchange"
+                >
+
+                <div class="brand-text">
+
+                    <strong>
+                        ROK EXCHANGE
+                    </strong>
+
+                    <span>
+                        RURAL OKLAHOMA'S DIGITAL FRONT PORCH
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="main-nav"
+                id="main-nav"
+            >
+
+                <a href="index.html">
+                    Discover
+                </a>
+
+                <a href="index.html#community">
+                    Community
+                </a>
+
+                <a href="marketplace.html">
+                    Marketplace
+                </a>
+
+                <a
+                    href="horse-value-index.html"
+                    class="active-nav"
+                >
+                    Horse Value Index
+                </a>
+
+                <a href="index.html#stories">
+                    Stories
+                </a>
+
+                <button
+                    type="button"
+                    class="dev-logout"
+                    onclick="logoutDev()"
+                >
+                    Sign Out
+                </button>
+
+                <a
+                    href="#"
+                    class="nav-post"
+                >
+                    + Post a Listing
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ========================================
+             HVI HERO
+             ======================================== -->
+
+        <section class="hvi-hero">
+
+            <div class="page-width hvi-hero-inner">
+
+                <p class="eyebrow">
+                    ROK HORSE VALUE INDEX
+                </p>
+
+                <h1>
+                    Know what your horse
+                    <span>may be worth.</span>
+                </h1>
+
+                <p class="hvi-intro">
+                    The Horse Value Index provides an estimated
+                    monetary range for a horse based on the details
+                    you provide and, eventually, comparable recent
+                    horse sales.
+                </p>
+
+                <button
+                    type="button"
+                    class="button hvi-start-button"
+                    id="open-hvi"
+                >
+                    Value My Horse →
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             HOW IT WORKS
+             ======================================== -->
+
+        <section class="hvi-how-section">
+
+            <div class="page-width">
+
+                <div class="hvi-section-heading">
+
+                    <p class="eyebrow dark">
+                        HOW IT WORKS
+                    </p>
+
+                    <h2>
+                        A better starting point
+                        <span>for understanding value.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="hvi-step-grid">
+
+
+                    <article class="hvi-step">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Tell us about your horse
+                        </h3>
+
+                        <p>
+                            Enter the basic characteristics that have
+                            the greatest effect on market value.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hvi-step">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Compare key factors
+                        </h3>
+
+                        <p>
+                            The index considers breed, age, training,
+                            discipline, experience and other factors.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hvi-step">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Receive a value range
+                        </h3>
+
+                        <p>
+                            Get an estimated low-to-high market range
+                            rather than an unrealistic exact price.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             IMPORTANT NOTICE
+             ======================================== -->
+
+        <section class="hvi-notice-section">
+
+            <div class="page-width hvi-notice">
+
+                <div>
+
+                    <p class="eyebrow">
+                        ABOUT THE INDEX
+                    </p>
+
+                    <h2>
+                        An estimate — not an appraisal.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Horse values can vary substantially based on
+                    individual condition, performance, pedigree,
+                    buyer demand and market conditions. The Horse
+                    Value Index should be used as an informational
+                    starting point and not as a professional appraisal.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         HORSE VALUE POPUP
+         ======================================== -->
+
+    <div
+        class="hvi-modal"
+        id="hvi-modal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="hvi-modal-backdrop"
+            id="hvi-backdrop"
+        ></div>
+
+
+        <div class="hvi-modal-panel">
+
+            <button
+                type="button"
+                class="hvi-close"
+                id="close-hvi"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <div
+                class="hvi-form-view"
+                id="hvi-form-view"
+            >
+
+                <p class="eyebrow dark">
+                    HORSE DETAILS
+                </p>
+
+                <h2>
+                    Tell us about your horse.
+                </h2>
+
+                <p class="hvi-form-intro">
+                    Complete the information below to generate
+                    an estimated value range.
+                </p>
+
+
+                <form id="hvi-form">
+
+
+                    <!-- AGE -->
+
+                    <div class="hvi-field">
+
+                        <label for="horse-age">
+                            Age
+                        </label>
+
+                        <input
+                            type="number"
+                            id="horse-age"
+                            min="0"
+                            max="40"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- SEX -->
+
+                    <div class="hvi-field">
+
+                        <label for="horse-sex">
+                            Sex
+                        </label>
+
+                        <select
+                            id="horse-sex"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="gelding">
+                                Gelding
+                            </option>
+
+                            <option value="mare">
+                                Mare
+                            </option>
+
+                            <option value="stallion">
+                                Stallion
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- BREED -->
+
+                    <div class="hvi-field">
+
+                        <label for="horse-breed">
+                            Breed
+                        </label>
+
+                        <select
+                            id="horse-breed"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="quarter">
+                                Quarter Horse
+                            </option>
+
+                            <option value="paint">
+                                Paint Horse
+                            </option>
+
+                            <option value="appaloosa">
+                                Appaloosa
+                            </option>
+
+                            <option value="thoroughbred">
+                                Thoroughbred
+                            </option>
+
+                            <option value="warmblood">
+                                Warmblood
+                            </option>
+
+                            <option value="arabian">
+                                Arabian
+                            </option>
+
+                            <option value="mustang">
+                                Mustang
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- LOCATION -->
+
+                    <div class="hvi-field">
+
+                        <label for="horse-location">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="horse-location"
+                            placeholder="Example: Guthrie, Oklahoma"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- REGISTRATION -->
+
+                    <div class="hvi-field">
+
+                        <label for="horse-registration">
+                            Registration
+                        </label>
+
+                        <select
+                            id="horse-registration"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="registered">
+                                Registered
+                            </option>
+
+                            <option value="grade">
+                                Grade / Unregistered
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- DISCIPLINE -->
+
+                    <div class="hvi-field">
+
+                        <label for="horse-discipline">
+                            Primary Discipline
+                        </label>
+
+                        <select
+                            id="horse-discipline"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="ranch">
+                                Ranch
+                            </option>
+
+                            <option value="roping">
+                                Roping
+                            </option>
+
+                            <option value="barrel">
+                                Barrel Racing
+                            </option>
+
+                            <option value="cutting">
+                                Cutting
+                            </option>
+
+                            <option value="reining">
+                                Reining
+                            </option>
+
+                            <option value="trail">
+                                Trail / Recreational
+                            </option>
+
+                            <option value="hunter">
+                                Hunter / Jumper
+                            </option>
+
+                            <option value="dressage">
+                                Dressage
+                            </option>
+
+                            <option value="general">
+                                General Riding
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- TRAINING -->
+
+                    <div class="hvi-field">
+
+                        <label for="horse-training">
+                            Training Level
+                        </label>
+
+                        <select
+                            id="horse-training"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="unstarted">
+                                Unstarted
+                            </option>
+
+                            <option value="green">
+                                Green / Lightly Started
+                            </option>
+
+                            <option value="started">
+                                Started
+                            </option>
+
+                            <option value="finished">
+                                Finished
+                            </option>
+
+                            <option value="advanced">
+                                Advanced / Proven
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- EARNINGS -->
+
+                    <div class="hvi-field">
+
+                        <label for="horse-earnings">
+                            Competition Earnings
+                        </label>
+
+                        <select
+                            id="horse-earnings"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="none">
+                                No earnings
+                            </option>
+
+                            <option value="under5000">
+                                Under $5,000
+                            </option>
+
+                            <option value="5000to15000">
+                                $5,000 – $15,000
+                            </option>
+
+                            <option value="15000to50000">
+                                $15,000 – $50,000
+                            </option>
+
+                            <option value="over50000">
+                                Over $50,000
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- SOUNDNESS -->
+
+                    <div class="hvi-field hvi-field-full">
+
+                        <label for="horse-soundness">
+                            Soundness / Health
+                        </label>
+
+                        <select
+                            id="horse-soundness"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="sound">
+                                Sound with no known limitations
+                            </option>
+
+                            <option value="minor">
+                                Minor disclosed condition
+                            </option>
+
+                            <option value="managed">
+                                Requires ongoing maintenance
+                            </option>
+
+                            <option value="limited">
+                                Significant riding limitation
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="hvi-field-full">
+
+                        <button
+                            type="submit"
+                            class="hvi-calculate-button"
+                        >
+                            Calculate Horse Value →
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- ========================================
+                 RESULT
+                 ======================================== -->
+
+            <div
+                class="hvi-result-view"
+                id="hvi-result-view"
+                hidden
+            >
+
+                <p class="eyebrow dark">
+                    HORSE VALUE INDEX
+                </p>
+
+                <h2>
+                    Estimated Market Range
+                </h2>
+
+
+                <div class="hvi-value-range">
+
+                    <span id="hvi-low-value">
+                        $0
+                    </span>
+
+                    <small>
+                        to
+                    </small>
+
+                    <span id="hvi-high-value">
+                        $0
+                    </span>
+
+                </div>
+
+
+                <div class="hvi-midpoint">
+
+                    Estimated midpoint:
+
+                    <strong id="hvi-mid-value">
+                        $0
+                    </strong>
+
+                </div>
+
+
+                <div class="hvi-confidence">
+
+                    <span>
+                        Prototype confidence
+                    </span>
+
+                    <strong>
+                        DEMO
+                    </strong>
+
+                </div>
+
+
+                <p class="hvi-result-note">
+                    This prototype currently uses a simplified
+                    internal scoring model. Future versions will
+                    incorporate recent comparable horse sales.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="hvi-again-button"
+                    id="hvi-again"
+                >
+                    Value Another Horse
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer>
+
+        <div class="page-width footer-inner">
+
+            <div>
+
+                <strong class="footer-logo">
+                    ROK EXCHANGE
+                </strong>
+
+                <span>
+                    BY OKLAHOMANS. FOR OKLAHOMANS.
+                </span>
+
+            </div>
+
+
+            <nav>
+
+                <a href="index.html">
+                    Discover
+                </a>
+
+                <a href="marketplace.html">
+                    Marketplace
+                </a>
+
+                <a href="horse-value-index.html">
+                    Horse Value Index
+                </a>
+
+            </nav>
+
+
+            <p>
+                © 2026 ROK Exchange
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ========================================
+         SCRIPTS
+         ======================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="auth.js"></script>
+
+    <script>
+        requireDevLogin();
+    </script>
+
+    <script src="dev.js"></script>
+
+    <script src="horse-value-index.js"></script>
+
+
+</body>
+
+</html>
